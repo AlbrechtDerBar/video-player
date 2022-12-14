@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <input type="file" name="videos" id="videos" multiple max="25" onchange="CreateVideos()" hidden>
+        <button onclick="document.getElementById('videos').click()">Select Files</button>
+        <button onclick="document.getElementById('container').innerHTML=''">Clear Files</button>
+        <button onclick="toggleVideos()" id="toggle">Play All</button>
+        <button onclick="restartVideos()" id="restart">Restart Videos</button>
+        <div id="container">
+            
+        </div>
+    </body>
+</html>
